@@ -1,8 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test('Add three products, verify cart and complete checkout @test1', async ({ page }) => {
-  test.setTimeout(10000);
-
   await page.goto('https://www.saucedemo.com');
 
   await page.getByLabel('Username').fill('standard_user');
